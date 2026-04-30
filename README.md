@@ -30,7 +30,7 @@ Add an alias for the script in you shell config:
 - Fish: add this to ~/.config/fish/fish.config
 
 ``` text
-alias lysp="python3 ~/.local/share/bin/lysp/src/main.py
+alias lysp="python3 ~/.local/share/bin/lysp/src/main.py"
 ```
 
 ### Contributions
