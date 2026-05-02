@@ -15,23 +15,25 @@ drwxr-xr-x - shepherd 28 Apr 13:46 src
 ```
 
 ### Installation
-**Important!: `lysp` only works on Linux/Unix**
+**Requirements**
+- Linux/Unix system
+- [uv](https://astral.sh/uv)
 
-Clone the repo into the correct spot on your machine:
+Fetch and install the `.whl` file
 ``` sh
-mkdir -p ~/.local/share/bin
-cd ~/.local/share/bin
-git clone https://github.com/ShepherdTausch/lysp.git
+wget https://github.com/ShepherdTausch/lysp/releases/download/v0.1.0/lysp-0.1.0-py3-none-any.whl
+uv tool install lysp-0.1.0-py3-none-any.whl
+# Tidy up
+rm lysp-0.1.0-py3-none-any.whl
 ```
 
-Add an alias for the script in you shell config:
-- Bash: add this to ~/.bashrc
-- Zsh: add this to ~/.zshrc
-- Fish: add this to ~/.config/fish/fish.config
-
-``` text
-alias lysp="python3 ~/.local/share/bin/lysp/src/main.py"
+That's it! Use lysp with:
+``` sh
+lysp
 ```
 
 ### Contributions
 Contributions are welcome in the form of pull requests and issues.
+
+### About
+Written to learn how to code. :) 
