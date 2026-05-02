@@ -8,3 +8,6 @@ dependencies = [
     "humanize>=4.15.0",
     "termcolor>=3.3.0",
 ]
+
+[project.scripts]
+lysp = "src.main:main"
